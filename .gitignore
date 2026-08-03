@@ -1,0 +1,23 @@
+# OS & System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+desktop.ini
+
+# Editor / IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node & Package Managers (Jika digunakan di masa depan)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment & temporary files
+.env
+.env.local
+*.log
