@@ -596,6 +596,91 @@ body {
   margin-bottom: 0.35rem;
 }
 
+/* LHO (Laporan Hasil Observasi) Styles */
+.lho-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.15rem;
+  margin: 1.25rem 0;
+}
+
+.lho-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.lho-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.lho-number {
+  width: 28px;
+  height: 28px;
+  background: var(--primary);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.82rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+}
+
+.lho-card-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.lho-card-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.lho-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  background: #F8FAFC;
+  border: 1px dashed #CBD5E1;
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+
+.lho-flow-step {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.lho-flow-arrow {
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
 /* Footer */
 .footer {
   background: var(--primary-dark);
@@ -622,4 +707,15 @@ body {
   .section-block {
     padding: 1.25rem;
   }
+
+  .lho-flow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lho-flow-arrow {
+    text-align: center;
+    transform: rotate(90deg);
+  }
 }
+
